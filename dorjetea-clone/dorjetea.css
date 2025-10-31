@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.top {
+    background-color: rgb(0, 40, 57);
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.nav .leftbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.nav .leftbar a {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.nav .rightbar {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.img {
+    text-align: center;
+    background-color: rgb(255, 239, 239);
+    border: 1px solid rgb(202, 199, 199);
+}
+
+.img a img {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chai h1 {
+    padding: 20px;
+    background-color: rgb(255, 236, 225);
+}
+
+#ads h1,
+.ads2 h1 {
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(0, 81, 82);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+#ads .sponsers,
+.ads2 .sponsers2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    gap: 20px;
+}
+
+.ads2 .sponsers2 {
+    gap: 60px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(254, 235, 209);
+    box-shadow: 1px 1px 5px 3px rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.box img {
+    border-radius: 20px;
+    padding: 10px;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box svg {
+    height: 15px;
+    width: 15px;
+}
+
+.star {
+    padding-left: 15px;
+}
+
+.big {
+    padding-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.small {
+    font-size: 0.7rem;
+    padding-left: 15px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: 'poppins', sans-serif;
+    color: rgb(49, 49, 49);
+}
+
+.price {
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.price .thin {
+    font-size: 0.8rem;
+    color: rgb(66, 66, 66);
+}
+
+.buy {
+    height: 40px;
+    width: 280px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: rgb(0, 81, 82);
+    margin-top: 60px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: 700px;
+    margin: 10px auto 40px;
+    line-height: 1.6;
+    color: #222;
+    font-family: 'poppins', sans-serif;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 60px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #f8d061;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.creame {
+    background-color: rgb(255, 236, 225);
+    padding: 10px;
+}
+
+.sharktank {
+    text-align: center;
+}
+
+.sharktank img {
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 90%;
+}
+
+.footer {
+    background-color: rgb(7, 27, 43);
+    font-family: 'poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer .footer-right .link a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-left .text {
+    font-size: 0.7rem;
+    max-width: 380px;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.footer .about {
+    letter-spacing: 2px;
+}
+
+.footer .footer-right .link {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.footer .footer-left .app {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .leftbar {
+        justify-content: center;
+    }
+
+    .boxes {
+        gap: 20px;
+    }
+
+    .box {
+        width: 45%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav .leftbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .ads .sponsers img,
+    .ads2 .sponsers2 img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .buy {
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer .footer-left .text {
+        max-width: 100%;
+    }
+
+    .footer .footer-left .app {
+        justify-content: center;
+    }
+}

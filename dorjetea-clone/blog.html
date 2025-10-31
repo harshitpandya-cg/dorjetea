@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorje Mail Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="shortcut icon" href="https://dorjeteas.com/cdn/shop/files/dorje-logo.png?v=1725257276&width=100"
+        type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6ed;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            background-color: rgb(0, 40, 57);
+            color: white;
+            text-align: center;
+            font-family: 'poppins', sans-serif;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .nav .leftbar {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            cursor: pointer;
+        }
+
+        .nav .leftbar a {
+            text-decoration: none;
+            color: rgb(59, 59, 59);
+            font-family: 'poppins', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+        }
+
+        .nav .rightbar {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #2e4b45;
+        }
+
+        .blog-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4f4f4f;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            justify-content: center;
+            align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background-color: transparent;
+            text-align: left;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card img:hover {
+            transform: scale(1.03);
+        }
+
+        .blog-card h3 {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #2e4b45;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .date,
+        .author {
+            font-size: 12px;
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .read-more {
+            font-size: 13px;
+            color: #2e4b45;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.2s ease;
+        }
+
+        .read-more:hover {
+            color: #1c332f;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .blog-card img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            25% OFF ON PURCHASE ABOVE RS. 799
+        </div>
+        <div class="nav">
+            <div class="leftbar">
+                <img src="https://dorjeteas.com/cdn/shop/files/dorje-logo.png?v=1725257276&width=50"
+                    alt="Dorje Teas logo">
+                <a href="./index.html">SHOP NOW</a>
+                <a href="#">NEWLY LAUNCHED</a>
+                <a href="./blog.html">BLOGS</a>
+                <a href="./learnmore.html">LEARN MORE</a>
+            </div>
+            <div class="rightbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M14.385 15.446a6.751 6.751 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06zM6.46 13.884a5.25 5.25 0 1 1 7.43-.005l-.005.005l-.005.004a5.25 5.25 0 0 1-7.42-.004"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-dasharray="20" stroke-dashoffset="20"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M6 19v-1c0 -2.21 1.79 -4 4 -4h4c2.21 0 4 1.79 4 4v1">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0" />
+                        </path>
+                        <path
+                            d="M12 11c-1.66 0 -3 -1.34 -3 -3c0 -1.66 1.34 -3 3 -3c1.66 0 3 1.34 3 3c0 1.66 -1.34 3 -3 3Z">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s"
+                                values="20;0" />
+                        </path>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M8.3 7.35h-.915c-1.888 0-2.761.433-3.173.91c-.408.473-.534 1.188-.424 2.203a14.5 14.5 0 0 0 5.639 2.064a2.75 2.75 0 0 1 5.148.006c1.966-.274 3.89-.96 5.634-2.04c.116-1.03-.01-1.755-.421-2.233c-.412-.477-1.285-.91-3.173-.91zm-6 3.315c-.13-1.158-.054-2.422.777-3.385c.834-.968 2.254-1.43 4.308-1.43h.173c0-.378 0-.798.053-1.192c.055-.41.174-.853.454-1.25c.589-.83 1.655-1.158 3.197-1.158h1.476c1.542 0 2.608.329 3.197 1.159c.28.396.4.838.454 1.25c.053.393.053.813.053 1.191h.173c2.054 0 3.474.462 4.308 1.43c.831.963.907 2.227.776 3.385l-.693 7.204c-.102.933-.344 1.973-1.212 2.746c-.856.763-2.174 1.135-4.102 1.135H8.308c-1.929 0-3.246-.372-4.102-1.135c-.868-.773-1.11-1.812-1.212-2.746l-.002-.01zM14.943 5.85c0-.396-.002-.714-.04-.993c-.037-.278-.103-.456-.191-.58c-.15-.212-.56-.527-1.973-.527h-1.476c-1.412 0-1.823.315-1.973.526c-.088.125-.154.303-.191.581c-.038.28-.04.597-.04.993zM12 12.25a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <h2>OUR BLOG</h2>
+    <h1>Dorje Mail</h1>
+    <div class="blog-header">
+        Treat this as a Dispatch from Darjeeling. Here you will find tales about your teas,
+        fables about the tea estate, legends about its birds, trees, and animals, and stories
+        about the people who work so hard to prepare it.
+    </div>
+
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/And_when_thou_art_weary_I_ll_find_thee_a_bed_Of_mosses_and_flowers_to_pillow_thy_head_John_Keats.jpg?v=1757818523&width=767"
+                alt="">
+            <h3>Careful and Precious Whispers</h3>
+            <div class="date">SEPTEMBER 14, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>“Slimy? Oh, you poor blind souls,” she laughed softly. “This is no ordinary patch.
+                This is the Persian rug of the earth, woven without loom, softer than velvet steeped in dreams. Try it.”
+            </p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/trees_remember_clouds_listen_and_the_earth_holds_stories_longer_than_men._What_we_do_with_our_intent_is_what_becomes_the_next_katha..jpg?v=1757215067&width=767"
+                alt="">
+            <h3>Karma and Katha</h3>
+            <div class="date">SEPTEMBER 7, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>But the man scoffed. With a puff from his pipe and the stroke of a saw, the sacred tree came crashing
+                down.
+                A foreboding silence followed...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_shelves_had_layers_books_behind_books_books_under_books_books_above_books_books_beside_books..jpg?v=1756609476&width=767"
+                alt="">
+            <h3>TIME at Blossoms</h3>
+            <div class="date">AUGUST 31, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>The shelves had layers — books behind books, books under books, books above books. It was like pulling
+                out
+                a brick in the wall, only to uncover a hidden vault of your subconscious.</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+    </div>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/Untitled_design.jpg?v=1756016988&width=767" alt="">
+            <h3>The Art of Conversation</h3>
+            <div class="date">SEPTEMBER 14, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>“Slimy? Oh, you poor blind souls,” she laughed softly. “This is no ordinary patch.
+                This is the Persian rug of the earth, woven without loom, softer than velvet steeped in dreams. Try it.”
+            </p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/Trust_in_dreams_for_in_them_is_hidden_the_gate_to_eternity.jpg?v=1755408193&width=767"
+                alt="">
+            <h3>The Logic of the Illogical</h3>
+            <div class="date">SEPTEMBER 7, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>But the man scoffed. With a puff from his pipe and the stroke of a saw, the sacred tree came crashing
+                down.
+                A foreboding silence followed...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_52.jpg?v=1712458892&width=767"
+                alt="">
+            <h3>𝐖𝐡𝐞𝐧 𝐋𝐢𝐠𝐡𝐭𝐧𝐢𝐧𝐠 𝐒𝐭𝐫𝐢𝐤𝐞𝐬</h3>
+            <div class="date">AUGUST 31, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>The shelves had layers — books behind books, books under books, books above books. It was like pulling
+                out
+                a brick in the wall, only to uncover a hidden vault of your subconscious.</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_51.jpg?v=1712221852&width=767"
+                alt="">
+            <h3>Ask Kishore</h3>
+            <div class="date">AUGUST 24, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>One of my fondest childhood memories is falling asleep to the gentle hum of conversation. No, no……</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_23.png?v=1711249777&width=767"
+                alt="">
+            <h3>A Forest Fire</h3>
+            <div class="date">AUGUST 17, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>What is a pond without water? A journey without a destination? Summer without mangoes? A funera...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_22.png?v=1710233944&width=767"
+                alt="">
+            <h3>Not Guilty</h3>
+            <div class="date">APRIL 7, 2024</div>
+            <div class="author">Written by Dorje Editor</div>
+            <p><strong>Mrs. Chaitea Sarkaar:</strong> (Chuckles) Well, it seems lightning’s got quite the reputation
+                around here.
+                But you trees? You’ve all got your own unique way of handling it...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/New-Zealand-Huntaway-900x500_png.webp?v=1709433626&width=767"
+                alt="">
+            <h3>Careful and Precious Whispers</h3>
+            <div class="date">SEPTEMBER 14, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>“Slimy? Oh, you poor blind souls,” she laughed softly. “This is no ordinary patch.
+                This is the Persian rug of the earth, woven without loom, softer than velvet steeped in dreams. Try it.”
+            </p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_20.png?v=1708503800&width=767"
+                alt="">
+            <h3>Karma and Katha</h3>
+            <div class="date">SEPTEMBER 7, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>But the man scoffed. With a puff from his pipe and the stroke of a saw, the sacred tree came crashing
+                down.
+                A foreboding silence followed...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_21.png?v=1708943314&width=767"
+                alt="">
+            <h3>TIME at Blossoms</h3>
+            <div class="date">AUGUST 31, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>The shelves had layers — books behind books, books under books, books above books. It was like pulling
+                out
+                a brick in the wall, only to uncover a hidden vault of your subconscious.</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_17.png?v=1707619572&width=767"
+                alt="">
+            <h3>The Art of Conversation</h3>
+            <div class="date">AUGUST 24, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>One of my fondest childhood memories is falling asleep to the gentle hum of conversation. No, no……</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1000&q=60"
+                alt="Open door mountains">
+            <h3>The Logic of the Illogical</h3>
+            <div class="date">AUGUST 17, 2025</div>
+            <div class="author">Written by Roma Agarwal</div>
+            <p>What is a pond without water? A journey without a destination? Summer without mangoes? A funera...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_16.png?v=1707112721&width=767"
+                alt="">
+            <h3>When Lightning Strikes</h3>
+            <div class="date">APRIL 7, 2024</div>
+            <div class="author">Written by Dorje Editor</div>
+            <p><strong>Mrs. Chaitea Sarkaar:</strong> (Chuckles) Well, it seems lightning’s got quite the reputation
+                around here.
+                But you trees? You’ve all got your own unique way of handling it...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_15.png?v=1706442113&width=767"
+                alt="">
+            <h3>Infinite Lives</h3>
+            <div class="date">FEBRUARY 11, 2024</div>
+            <div class="author">Written by Dorje Editor</div>
+            <p>The warm interior clashed delightfully with the chilly air outside, causing the windows to fog up. And
+                what did I do with those foggy windows?...</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_12.png?v=1705327112&width=767"
+                alt="">
+            <h3>Storm in a Tea Cup</h3>
+            <div class="date">FEBRUARY 5, 2024</div>
+            <div class="author">Written by Dorje Editor</div>
+            <p>Mrs Chaitea Sarkaar, with her sharp instincts, took charge of the crime scene. The <strong>tempest in a
+                    teapot</strong> had taken on a darker meaning — a clue that something sinister had occurred.</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://dorjeteas.com/cdn/shop/articles/The_waves_of_the_mountains_at_Selim_Hill_Tea_Estate_13.png?v=1705836787&width=767"
+                alt="">
+            <h3>House on Fire</h3>
+            <div class="date">JANUARY 21, 2024</div>
+            <div class="author">Written by Dorje Editor</div>
+            <p>The new year began very interestingly. Going through many layers of warmth and discovery, we found
+                courage hidden beneath ashes of routine.</p>
+            <a href="#" class="read-more">CONTINUE READING</a>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
