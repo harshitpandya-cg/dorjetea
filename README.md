@@ -15,11 +15,6 @@ CSS3 — Styling, layout (Flexbox / Grid), and animations
 
 No frameworks. No libraries. Just vanilla HTML and CSS.
 
-🚀 Getting Started
-Since this is a fully static site, no build tools or installations are needed.
-bash# 1. Clone the repository
-git clone https://github.com/your-username/dorje-tea-clone.git
-
 # 2. Open the project folder
 cd dorje-tea-clone
 
